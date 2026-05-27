@@ -296,16 +296,8 @@ footer {
 }
 
 @keyframes blink {
-
-    0%,
-    50% {
-        opacity: 1;
-    }
-
-    51%,
-    100% {
-        opacity: 0;
-    }
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
 }
 
 @keyframes fadeIn {
@@ -313,7 +305,6 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -376,48 +367,85 @@ footer {
     }
 }
 
-/* Animaciones tarjetas */
+/* Habilidades */
 
-.hidden {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
+.habilidades{
+
+    background-color:#111;
+
 }
 
-.visible {
-    opacity: 1;
-    transform: translateY(0);
+.skills-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+
 }
 
+.skill-card{
 
-/* Botón subir arriba */
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
 
-#btnTop {
+    border:1px solid #2a2a2a;
 
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-
-    width: 50px;
-    height: 50px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #3b82f6;
-    color: white;
-
-    font-size: 20px;
-
-    cursor: pointer;
-
-    display: none;
-
-    transition: .3s;
+    transition:.4s;
 }
 
-#btnTop:hover {
+.skill-card:hover{
 
-    transform: scale(1.1);
+    transform:translateY(-8px);
+
+}
+
+.skill-card h3{
+
+    margin-bottom:15px;
+    color:white;
+
+}
+
+.skill-bar{
+
+    background:#333;
+    border-radius:30px;
+    overflow:hidden;
+    height:25px;
+
+}
+
+.skill-level{
+
+    height:100%;
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:14px;
+
+}
+
+.avanzado{
+
+    width:90%;
+    background:#16a34a;
+
+}
+
+.medio{
+
+    width:70%;
+    background:#3b82f6;
+
+}
+
+.basico{
+
+    width:40%;
+    background:#f59e0b;
 
 }
