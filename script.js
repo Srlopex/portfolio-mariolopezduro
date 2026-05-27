@@ -47,3 +47,81 @@ navLinks.forEach(link => {
         navMenu.classList.remove('active');
     });
 });
+
+// ============================
+// ANIMACIONES AL HACER SCROLL
+// ============================
+
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+cards.forEach(card => {
+
+    card.classList.add('hidden');
+
+    observer.observe(card);
+
+});
+
+
+// ============================
+// BOTÓN VOLVER ARRIBA
+// ============================
+
+const btnTop = document.createElement('button');
+
+btnTop.innerHTML = '↑';
+
+btnTop.id = 'btnTop';
+
+document.body.appendChild(btnTop);
+
+
+window.addEventListener('scroll', () => {
+
+    if (window.scrollY > 300) {
+
+        btnTop.style.display = 'block';
+
+    } else {
+
+        btnTop.style.display = 'none';
+
+    }
+
+});
+
+
+btnTop.addEventListener('click', () => {
+
+    window.scrollTo({
+
+        top: 0,
+        behavior: 'smooth'
+
+    });
+
+});
+
+
+// ============================
+// AÑO AUTOMÁTICO FOOTER
+// ============================
+
+document.querySelector(
+    "footer p"
+).innerHTML =
+`© ${new Date().getFullYear()} Mario López Duro`;
