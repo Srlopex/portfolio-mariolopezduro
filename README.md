@@ -2,31 +2,64 @@
 
 ## Descripción
 
-Este proyecto consiste en un portfolio web personal desarrollado con HTML, CSS y JavaScript cuyo objetivo es presentar mi perfil profesional, formación académica, experiencia y proyectos realizados.
+Este proyecto consiste en un portfolio web personal desarrollado con HTML, CSS y JavaScript cuyo objetivo es mostrar mi perfil profesional, formación académica, experiencia, habilidades y proyectos desarrollados durante mi formación en Desarrollo de Aplicaciones Multiplataforma (DAM).
 
-La página ha sido diseñada con un enfoque moderno, adaptable y orientado a una presentación clara de la información, incorporando además elementos dinámicos para mejorar la experiencia del usuario.
+El portfolio ha sido diseñado con una interfaz moderna, responsive y dinámica, incorporando distintos efectos visuales y funcionalidades que mejoran la experiencia del usuario.
 
-## Características principales
+---
 
-- Diseño responsive adaptable a diferentes dispositivos.
-- Navegación fija con desplazamiento suave entre secciones.
-- Presentación personal con efecto de escritura animado.
-- Sección "Sobre mí".
-- Experiencia profesional.
-- Formación académica.
-- Idiomas y certificaciones.
-- Sección de proyectos.
-- Información de contacto y redes profesionales.
-- Menú móvil desplegable.
+## Página publicada
+
+URL del proyecto:
+
+https://TU-USUARIO.github.io/TU-REPOSITORIO/
+
+---
 
 ## Tecnologías utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
-- Diseño Responsive
 - Flexbox
 - CSS Grid
+- Responsive Design
+
+---
+
+## Paleta de colores utilizada
+
+| Color | Código |
+|---------|----------|
+| Fondo principal | #0a0a0a |
+| Fondo secundario | #1a1a1a |
+| Azul principal | #3b82f6 |
+| Texto principal | #e5e5e5 |
+| Texto secundario | #9ca3af |
+| Bordes | #2a2a2a |
+
+La paleta fue seleccionada para mantener un estilo moderno tipo desarrollador, utilizando tonos oscuros y colores azules para destacar elementos importantes.
+
+---
+
+## Características principales
+
+- Diseño responsive adaptable a móviles, tablets y escritorio.
+- Menú de navegación fijo.
+- Scroll suave entre secciones.
+- Menú móvil desplegable.
+- Animación inicial simulando código Java.
+- Animaciones al aparecer tarjetas durante el scroll.
+- Botón para volver arriba.
+- Sección personal "Sobre mí".
+- Formación académica.
+- Experiencia profesional.
+- Habilidades técnicas.
+- Idiomas.
+- Proyectos con imágenes y tecnologías utilizadas.
+- Información de contacto y redes profesionales.
+
+---
 
 ## Estructura del proyecto
 
@@ -36,75 +69,158 @@ portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
-├── Mario.jpeg
+│
+├── assets/
+│   └── imgs/
+│       ├── Mario.jpeg
+│       ├── ia-project.jpg
+│       └── minirogue.jpg
+│
 └── README.md
 ```
 
-## Funcionalidades implementadas
+---
 
-### Animación inicial
+## Elemento diferenciador
 
-Se implementó un efecto de escritura simulando código Java mediante JavaScript que se muestra al iniciar la página.
+El portfolio incorpora varios elementos personalizados:
 
-### Navegación dinámica
+### Animación inicial de código Java
 
-La aplicación dispone de:
+Al entrar en la página se muestra una animación que simula la escritura automática de código Java antes de mostrar el contenido principal.
 
-- Menú de navegación fijo
-- Scroll suave entre secciones
-- Menú responsive para dispositivos móviles
+Elegí este elemento porque representa directamente el ámbito del desarrollo de software y genera una primera impresión más dinámica.
 
-### Diseño adaptable
+### Animaciones por scroll
 
-La interfaz se adapta automáticamente a diferentes tamaños de pantalla:
+Las tarjetas aparecen progresivamente al desplazarse por la página mediante JavaScript e Intersection Observer.
 
-- Ordenadores
-- Tablets
-- Dispositivos móviles
+### Botón volver arriba
 
-## Información incluida
+Se añadió un botón flotante que aparece automáticamente durante la navegación para mejorar la experiencia del usuario.
 
-El portfolio contiene:
+---
 
-- Perfil personal
-- Formación académica
-- Experiencia profesional
-- Idiomas
-- Proyectos realizados
-- Datos de contacto
-- Enlaces a GitHub y LinkedIn
+## Uso de Inteligencia Artificial
 
-## Objetivos del proyecto
+Durante el desarrollo del proyecto se utilizaron herramientas de IA como apoyo en distintas tareas:
 
-Los objetivos principales de este proyecto han sido:
+- Generación y mejora de código HTML, CSS y JavaScript.
+- Ayuda en la estructura inicial del portfolio.
+- Generación de ideas para diseño y organización.
+- Revisión y mejora de textos descriptivos.
+- Optimización de estilos y animaciones.
 
-- Aplicar conocimientos de HTML, CSS y JavaScript.
-- Mejorar habilidades de diseño web responsive.
-- Crear una presencia profesional online.
-- Practicar organización y estructura de proyectos web.
+Toda la información personal, contenido y adaptación final fue revisada y modificada manualmente.
+
+---
+
+## Proyectos incluidos
+
+### Portfolio Web Personal
+
+Sitio web desarrollado con HTML, CSS y JavaScript para mostrar información personal y profesional.
+
+Tecnologías:
+
+- HTML
+- CSS
+- JavaScript
+
+### Proyecto IA Educativa
+
+Desarrollo de un asistente basado en inteligencia artificial orientado a resolver preguntas y proporcionar apoyo educativo.
+
+Tecnologías:
+
+- IA
+- APIs
+- JavaScript
+
+### Mini Rogue — Juego Java
+
+Mini juego inspirado en Mini Rogue desarrollado aplicando programación orientada a objetos.
+
+Características:
+
+- Sistema de combate
+- Gestión de personajes
+- Inventario
+- Eventos aleatorios
+- Lógica de juego
+
+Tecnologías:
+
+- Java
+- POO
+
+---
+
+## Dificultades encontradas y soluciones
+
+### Adaptación responsive
+
+Problema:
+
+El diseño inicial presentaba problemas en móviles y algunos elementos se descolocaban.
+
+Solución:
+
+Se utilizaron Media Queries, Flexbox y CSS Grid para adaptar correctamente la estructura.
+
+### Animaciones y JavaScript
+
+Problema:
+
+Integrar efectos dinámicos sin afectar al rendimiento.
+
+Solución:
+
+Se implementaron eventos controlados mediante JavaScript y animaciones CSS optimizadas.
+
+### Organización del código
+
+Problema:
+
+Conforme el proyecto fue creciendo, mantener una estructura ordenada se volvió más complejo.
+
+Solución:
+
+Se reorganizó el proyecto mediante carpetas separadas para imágenes y recursos.
+
+---
 
 ## Cómo ejecutar el proyecto
 
-1. Clonar el repositorio:
+Clonar repositorio:
 
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
 ```
 
-2. Acceder a la carpeta:
+Acceder a la carpeta:
 
 ```bash
-cd TU_REPOSITORIO
+cd TU-REPOSITORIO
 ```
 
-3. Abrir el archivo:
+Abrir:
 
 ```bash
 index.html
 ```
 
-O ejecutar mediante una extensión como Live Server en Visual Studio Code.
+También puede ejecutarse mediante Live Server en Visual Studio Code.
+
+---
 
 ## Autor
 
 Mario López Duro
+
+GitHub:
+https://github.com/Srlopex
+
+LinkedIn:
+
+https://linkedin.com/in/mario-lopez-duro
