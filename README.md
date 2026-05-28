@@ -223,4 +223,4 @@ https://github.com/Srlopex
 
 LinkedIn:
 
-https://linkedin.com/in/mario-lopez-duro
+[https://linkedin.com/in/mario-lopez-duro](https://www.linkedin.com/in/mario-l%C3%B3pez-duro-0b0341379/)
