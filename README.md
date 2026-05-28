@@ -12,7 +12,7 @@ El portfolio ha sido diseñado con una interfaz moderna, responsive y dinámica,
 
 URL del proyecto:
 
-https://TU-USUARIO.github.io/TU-REPOSITORIO/
+[https://TU-USUARIO.github.io/TU-REPOSITORIO/](https://srlopex.github.io/portfolio-mariolopezduro/)
 
 ---
 
